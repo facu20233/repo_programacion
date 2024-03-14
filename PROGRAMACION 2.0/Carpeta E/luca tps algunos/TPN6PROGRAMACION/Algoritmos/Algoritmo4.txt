@@ -1,0 +1,38 @@
+ALGORITMO ASPIRABOT
+
+ENTRADA: instrucciones:arre de caracteres. MF: '\0'
+SALIDA: cant: entero
+V.AUX: i,dire //preguntar si las variables que se utilizan en la funcion se declaran, y en donde
+
+A0_ cant<--0, i<--0, dire<--0
+A1_ LEER(instrucciones)
+A2_ cant<-- calcularDato(instrucciones)
+A3_ ESCRIBIR(cant)
+A4_ PARAR
+
+
+Funcion calcularDato(cad)
+
+MIENTRAS (cad <> '\0' && dire <> 2 && dire <> -2)
+
+	SI(cad[i] = 'H')
+		dire <-- dire+1
+		cant<--cant+1
+	SI(cad[i] = 'A')
+		dire<-- dire-1
+		cant<--cant+1
+
+FIN
+SI(dire <> 2 && dire <> -2)
+	cant<-- -1
+FIN SI
+
+retorna (cant)
+	
+	
+
+
+
+
+
+		

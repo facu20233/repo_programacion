@@ -1,0 +1,39 @@
+ALGORITMO ADIVINANDO LA PALABRA
+
+ENTRADA: palabra(arreglo): caracter, letra: caracter
+SALIDA: guiones(arreglo): caracter
+V.AUX: cont,cont1,intentos,i:entero
+
+A0_ cont<--0, cont1<--0, intentos<--3, i<--0
+A1_ LEER(palabra)
+A2_ Mostrar_Guiones,ESCRIBIR(palabra1)
+A3_ LEER(letra)
+A4_ Letras_Encontradas
+
+A2_ Mostrar_Guiones
+
+MIENTRAS(palabra[cont] != '\0')
+	
+	guiones[cont] <-- '-'
+	cont<--cont+1
+FIN
+
+	
+A4_ Letras_Encontradas
+	
+	MIENTRAS(intentos <> 0 )
+		LEER(letra)
+
+		HACER cont veces(i: 1...cont)
+
+			SI (letra = palabra[i])
+				guiones[i]<--- letra
+			SINO 
+				intentos<-- intentos-1
+			ESCRIBIR(guiones)
+		FIN
+	
+	
+
+
+

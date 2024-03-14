@@ -1,0 +1,55 @@
+funcion bisiesto ()
+2000 - 2050   cantBi=0 mostrar años bisiesto
+
+Algortitmo bisiesto
+ENTRADA:num1,num2:entero(+)
+SALIDA:cantBi:entero(+)
+V.aux: 
+
+A0. inicializar
+A
+A
+A
+A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+ALGORITMO NUEVA DOCUMENTACION
+
+ENTRADA: dni: entero
+SALIDA:	dni,letra :entero
+V.AUX: tabla: arreglo de caracteres, posicion:entero, *p_tabla: puntero
+
+A0_ tabla<-- 'TRWAGMYFPDXBNJZSQVHLCKE', p_tabla<-- tabla
+A1_ LEER(dni)
+A2_ Calcular_Letra
+A3_ Escribir(letra,dni)
+A4_ PARAR
+
+
+A2_ Calcular_Letra
+
+posicion <-- dni % 23
+p_tabla<-- p_tabla + posicion
+
+letra<-- *p_tabla //accedemos a letra...	

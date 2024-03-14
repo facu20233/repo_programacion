@@ -1,0 +1,46 @@
+ALGORITMO MEZCLANDO CADENAS
+
+ENTRADA: cad1,cad2 : arreglos de caracteres, num:entero 
+SALIDA: cad1
+V.AUX: *p_cad1, *p_cad2: punteros, aux_cad: arreglo de caracteres, *paux_cad: puntero
+
+A0_p_cad1<-- cad1, p_cad2<-- cad2, i<--0, paux_cad<-- aux_cad
+A1_ LEER(cad1,cad2,num)
+A2_ Insertar_Cadena
+A3_ ESCRIBIR(cad1)
+A4_ PARAR
+
+
+A2_ Insertar_Cadena
+
+p_cad1 <--p_cad1 + (num-1)		
+
+MIENTRAS(*p_cad1 <> '\0')
+		
+	*paux_cad<-- *p_cad1
+ 
+	p_cad1<--punt+1
+	paux_cad<--paux_cad+1
+FIN
+p_cad1 <--p_cad1 + (num-1)
+
+MIENTRAS(*p_cad2 <> '\0')
+	
+	*p_cad1 <-- *p_cad2
+	
+	p_cad1<--p_cad1 + 1
+	p_cad2<--p_cad2 + 1
+FIN
+
+MIENTRAS (*paux_cad <> '\0')
+
+	*p_cad1<--*paux_cad
+
+	
+	p_cad1<--p_cad1 + 1
+	paux_cad<-<--paux_cad + 1
+
+
+
+
+
