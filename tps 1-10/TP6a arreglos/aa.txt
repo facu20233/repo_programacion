@@ -1,9 +1,0 @@
-<stdlib.h>
-
-num = rand()                  0 a 32767 defecto
-num = rand() + 1              1 a 32767 defecto
-num = rand() % 13             0 a 12
-
-num = rand() % 401            0 a 400
-
-srand(time(null))
